@@ -10,3 +10,11 @@ development:
 test:
   <<: *default
   database: iloveyou_test
+
+production:
+  <<: *default
+  username: kwxbbgsbrdnvxp
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  database: d5iu2uaqesmbio
+  host: ec2-54-227-253-238.compute-1.amazonaws.com
+
