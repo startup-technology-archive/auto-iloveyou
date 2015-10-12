@@ -1,0 +1,17 @@
+<a href="/new">告白する</a>
+<table>
+  <tr>
+    <th>あなたのお名前</th>
+    <th>お相手のお名前</th>
+    <th>お相手の電話番号</th>
+    <th>告白結果</th>
+  </tr>
+  <% @calls.each do |call| %>
+    <tr>
+      <td><%= call.from_name %></td>
+      <td><%= call.to_name %></td>
+      <td><%= call.tel %></td>
+      <td><%= call.status_name %></td>
+    </tr>
+  <% end %>
+</table>
